@@ -47,12 +47,12 @@ body {
 }
 
 .links-profile__image img {
-    width: 6rem;
+    width: 5rem;
     border-radius: 50%;
 }
 
 .links-profile__header {
-    margin: 1.8rem 0;
+    margin: 1.2rem 0;
 }
 
 h1 {
@@ -76,12 +76,13 @@ p {
 }
 
 .links-profile__talent {
-    margin-bottom: 0.5rem;
+    margin-top: 1.2rem;
 }
 
-button {
+.links-profile__btn li {
     width: 100%;
-    padding: 0.75rem;
+    padding: 0.85rem;
+    list-style: none;
     cursor: pointer;
     margin-top: 0.85rem;
     background-color: var(--neutral-gry);
@@ -89,17 +90,12 @@ button {
     border-radius: 8px;
 }
 
-button:hover {
+.links-profile__btn li:hover {
     background-color: var(--primary-cl);
 }
 
-button:hover a {
+.links-profile__btn li:hover a {
     color: var(--neutral-off-blk);
-}
-
-
-.links-profile__btn li {
-    list-style: none;
 }
 
 .links-profile__btn a {
