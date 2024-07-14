@@ -32,6 +32,7 @@
 
 body {
     background-color: var(--neutral-off-blk);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -39,25 +40,25 @@ body {
 .links-profile {
     background-color: var(--neutral-dark-gry);
     text-align: center;
-    min-height: 100vh;
-    /* width: 375px; */
-    margin: 0 auto;
+    margin: auto;
     padding: 24px;
     outline: none;
+    border-radius: 12px;
 }
 
 .links-profile__image img {
-    width: 5rem;
+    width: 6rem;
     border-radius: 50%;
 }
 
 .links-profile__header {
-    margin: 2rem 0;
+    margin: 1.8rem 0;
 }
 
 h1 {
     font-family: "Inter";
     font-weight: 600;
+    font-size: 1.65rem;
     color: var(--neutral-wht);
 }
 
@@ -71,16 +72,29 @@ p {
 .links-profile__location {
     color: var(--primary-cl);
     margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.links-profile__talent {
+    margin-bottom: 0.5rem;
 }
 
 button {
     width: 100%;
-    padding: 1rem;
+    padding: 0.75rem;
     cursor: pointer;
-    margin-top: 1.5rem;
+    margin-top: 0.85rem;
     background-color: var(--neutral-gry);
     border: none;
     border-radius: 8px;
+}
+
+button:hover {
+    background-color: var(--primary-cl);
+}
+
+button:hover a {
+    color: var(--neutral-off-blk);
 }
 
 
@@ -92,16 +106,24 @@ button {
     text-decoration: none;
     color: var(--neutral-wht);
     font-weight: 600;
-}
-
-footer {
-    margin-top: auto;
+    font-size: 0.75rem;
 }
 
 .attribution {
+  background-color: var(--neutral-gry);  
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+/* media query for tablet and desktop */
+
+@media screen and (min-width: 768px) {
+    .links-profile {
+        width: 22rem;
+        padding: 36px;
+    }
 }
